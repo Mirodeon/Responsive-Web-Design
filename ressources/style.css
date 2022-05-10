@@ -1,20 +1,20 @@
 body {
     background-color: blue;
     display: flex;
+    font-size: large;
 }
 
 @media screen and (max-width: 768px) {
     body {
         background-color: green;
-        display: grid;
-        
+        display: grid;   
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 20px 20px;
         grid-template-areas:
             "small medium"
             "large large";
-        width: 100%;
+        font-size: medium;
     }
     
     #small {
@@ -35,6 +35,7 @@ body {
     body {
         background-color: red;
         display: block;
+        font-size: small;
     }
 
 }
