@@ -1,0 +1,40 @@
+body {
+    background-color: blue;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: green;
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px 20px;
+        grid-template-areas:
+            "small medium"
+            "large large";
+        width: 100%;
+    }
+    
+    #small {
+        grid-area: small;
+    }
+
+    #medium {
+        grid-area: medium;
+    }
+    
+    #large {
+        grid-area: large;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+    body {
+        background-color: red;
+        display: block;
+    }
+
+}
